@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EdgeEffect;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
     EditText onroad, down,intrate, tenure,loan;
@@ -43,16 +46,16 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     if(checkdown.matches("")){
-                    Toast.makeText( MainActivity.this, "Please enter a valid down payment price of car",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+                        Toast.makeText( MainActivity.this, "Please enter a valid down payment price of car",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                     else{
                         double carprice=Double.parseDouble(onroad.getText().toString());
                         double downpayment=Double.parseDouble(down.getText().toString());
 
                         String loanamt=String.valueOf(carprice-downpayment);
                         loan.setText(loanamt);
-                }
+                    }
                 }
             }
         });
@@ -72,11 +75,13 @@ public class MainActivity extends AppCompatActivity {
                     double irate=Double.parseDouble(intrate.getText().toString());
                     double time=Double.parseDouble(tenure.getText().toString());
                     double rate=irate/1200;
-                    float finaemi=(float)((principal*rate*(Math.pow(1+rate,time))/(Math.pow(1+rate,time)-1)));
-                    String f=String.format("%0.2f",finaemi);
-                    emiresult.setText(f);
+                    float fin = (float)((principal*rate*((Math.pow(1+rate,time))/(Math.pow(1+rate,time)-1))));
+
+                    String v;
+                    v = String.format("%.2f", fin);
+                    emiresult.setText(v);
                 }
             }
         });
-        }
+    }
 }
