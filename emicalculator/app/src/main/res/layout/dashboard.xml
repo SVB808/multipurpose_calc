@@ -20,18 +20,135 @@
             android:layout_marginTop="32dp"
             android:layout_marginLeft="20dp">
             <TextView
-                android:layout_width="280dp"
-                android:layout_height="60dp"
-                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="30sp"
                 android:fontFamily="@font/lemon"
                 android:textColor="@color/white"
-                android:text="Heyya! Welcome to FindX"
+                android:text="Namaste!"
+                android:id="@+id/txtdashboard"
                 />
+            <TextView
+                android:layout_below="@id/txtdashboard"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:fontFamily="@font/lemon"
+                android:textColor="@color/white"
+                android:text="Welcome to FindX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"/>
+
             <ImageView
-                android:layout_alignParentRight="true"
-                android:src="@drawable/user"
                 android:layout_width="62dp"
                 android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/alphabet"/>
         </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:rowCount="3"
+            android:columnCount="1">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_margin="20dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/fitness"
+                        android:onClick=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Health Calculators"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lemon"
+                        android:textColor="#6F6F6F"
+                        android:layout_marginTop="12dp"/>
+                    
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/finance"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finance Calculators"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lemon"
+                        android:textColor="#6F6F6F"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/mathsicn"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Math Calculators"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lemon"
+                        android:textColor="#6F6F6F"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
     </LinearLayout>
 </ScrollView>
