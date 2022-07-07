@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                         double carprice=Double.parseDouble(onroad.getText().toString());
                         double downpayment=Double.parseDouble(down.getText().toString());
 
-                        String loanamt=String.valueOf(carprice=downpayment);
+                        String loanamt=String.valueOf(carprice-downpayment);
                         loan.setText(loanamt);
                 }
                 }
@@ -72,8 +72,9 @@ public class MainActivity extends AppCompatActivity {
                     double irate=Double.parseDouble(intrate.getText().toString());
                     double time=Double.parseDouble(tenure.getText().toString());
                     double rate=irate/1200;
-                    String finaemi=String.valueOf(((principal*rate*Math.pow(1+rate,time)/Math.pow(1+rate,time)-1)));
-                    emiresult.setText(finaemi);
+                    float finaemi=(float)((principal*rate*(Math.pow(1+rate,time))/(Math.pow(1+rate,time)-1)));
+                    String f=String.format("%0.2f",finaemi);
+                    emiresult.setText(f);
                 }
             }
         });
