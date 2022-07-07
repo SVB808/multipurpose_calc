@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button carloan,emires;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) { //hello
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.emicalc);
 
