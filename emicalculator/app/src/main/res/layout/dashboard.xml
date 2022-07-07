@@ -4,8 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="190sp"
-    android:background="@drawable/custom_background"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -20,11 +20,12 @@
             android:layout_marginTop="32dp"
             android:layout_marginLeft="20dp">
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/lemon"
                 android:textColor="@color/white"
-                android:text="Heyya!!!!"
+                android:text="Heyya! Welcome to FindX"
                 />
             <ImageView
                 android:layout_alignParentRight="true"
