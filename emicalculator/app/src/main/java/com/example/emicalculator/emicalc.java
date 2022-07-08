@@ -17,7 +17,7 @@ public class emicalc extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.emicalc);
+        setContentView(R.layout.activity_emicalc);
 
         onroad=(EditText)findViewById(R.id.carprice);
         down=(EditText)findViewById(R.id.dp);
