@@ -75,7 +75,7 @@
                         android:layout_margin="20dp"
                         android:src="@drawable/fitness"
                         android:id="@+id/health"
-                        android:onClick=""/>
+                        android:onClick="movepageh"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -107,6 +107,7 @@
                         android:layout_height="90dp"
                         android:layout_margin="20dp"
                         android:id="@+id/finance"
+                        android:onClick="movepagef"
                         android:src="@drawable/finance"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -139,6 +140,7 @@
                         android:layout_height="90dp"
                         android:layout_margin="20dp"
                         android:id="@+id/maths"
+                        android:onClick="movepagem"
                         android:src="@drawable/mathsicn"/>
                     <TextView
                         android:layout_width="wrap_content"

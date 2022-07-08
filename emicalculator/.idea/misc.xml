@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_select_use.xml" value="0.2" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_select_use_health.xml" value="0.264" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_select_use_math.xml" value="0.13496376811594202" />
         <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_simplecalc.xml" value="0.20471014492753623" />
         <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/dashboard.xml" value="0.20471014492753623" />
         <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/emicalc.xml" value="0.264" />

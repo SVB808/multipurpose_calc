@@ -18,7 +18,7 @@
         android:gravity="center"
         android:textColor="#CD0404"
         android:textStyle="bold"
-        android:textSize="100px" />
+        android:textSize="50dp" />
 
     <EditText
         android:layout_width="match_parent"

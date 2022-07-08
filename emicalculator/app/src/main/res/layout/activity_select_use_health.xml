@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/b1"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".select_use_health">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="50dp"
+        android:fontFamily="@font/amarante"
+        android:text="Health Calculators"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:fontFamily="@font/lemon"
+        android:gravity="center"
+        android:padding="20dp"
+        android:backgroundTint="#66000000"
+        android:textColor="#88E7EE"
+        android:text="BMI Calculator"
+        android:id="@+id/bmi"
+        android:onClick="bmicalc"
+        android:textSize="20dp" />
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Body Fat Calculator"
+        android:fontFamily="@font/lemon"
+        android:backgroundTint="#66000000"
+        android:textColor="#88E7EE"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:id="@+id/bfat"
+        android:onClick="bfatcalc"/>
+</LinearLayout>
