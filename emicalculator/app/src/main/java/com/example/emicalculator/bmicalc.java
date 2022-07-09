@@ -25,13 +25,11 @@ public class bmicalc extends AppCompatActivity {
     }
     public void calculatebmi(View v)
     {
-        int a;
         float rb,w,h;
-        a= Integer.parseInt(bma.getText().toString());
         w= Float.parseFloat(bmw.getText().toString());
         h= Float.parseFloat(bmh.getText().toString());
         rb=(w/((h/100)*(h/100)));
-        bmres.setText(""+rb);
+        bmres.setText(""+String.format("%.2f",rb));
         if(rb<16)
         {
             bmcat.setText("Severe Thinness");
