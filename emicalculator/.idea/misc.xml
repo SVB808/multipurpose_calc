@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_bfatcalc.xml" value="0.264" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/drawable/custom_background.xml" value="0.1985" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/drawable/custom_button.xml" value="0.1985" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/drawable/custom_radio_button.xml" value="0.1985" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/drawable/ic_baseline_radio_button_checked_24.xml" value="0.1985" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/drawable/ic_baseline_radio_button_unchecked_24.xml" value="0.1985" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/drawable/radio_btn.xml" value="0.1985" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/drawable/radio_selector.xml" value="0.1985" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/drawable/radio_slctd.xml" value="0.1985" />
+        <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_bfatcalc.xml" value="0.176" />
         <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_bmicalc.xml" value="0.2" />
         <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_cicalc.xml" value="0.13496376811594202" />
         <entry key="..\:/MiniProjects/MAD/emicalculator/app/src/main/res/layout/activity_emicalc.xml" value="0.264" />
