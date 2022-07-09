@@ -4,72 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1B5B5"
+    android:background="@drawable/b12"
     tools:context=".cicalc"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="Simple Interest Calculator"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="50dp" />
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Compound Interest Calculator"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:gravity="center"
-        android:layout_marginTop="30dp"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <EditText
-        android:id="@+id/princ"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="Principal"
+            android:textColor="#FFFFFF"
+            android:background="#33251A1A"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:layout_margin="25dp"/>
+
+        <EditText
+            android:id="@+id/princ"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lemon"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_margin="25dp"
+            android:textColorHint="#99FFFFFF"
+            android:hint="(Rupees)"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Princical"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="70dp"
-        android:textStyle="bold"
-        android:textSize="25sp"/>
-    <EditText
-        android:id="@+id/roi"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="Time"
+            android:textColor="#FFFFFF"
+            android:background="#33251A1A"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:layout_margin="25dp"/>
+
+        <EditText
+            android:id="@+id/ctime"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lemon"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_margin="25dp"
+            android:textColorHint="#99FFFFFF"
+            android:hint="(Years)"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Rate of Interest"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="25sp"/>
-    <EditText
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter Time (in months)"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="25sp"/>
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="Rate of Interest"
+            android:textColor="#FFFFFF"
+            android:background="#33251A1A"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:layout_margin="25dp"/>
+
+        <EditText
+            android:id="@+id/roi"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lemon"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_margin="25dp"
+            android:textColorHint="#99FFFFFF"
+            android:hint="(Per Annum)"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
     <Button
-        android:id="@+id/calc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
         android:text="Calculate"
-        android:textSize="20sp"
-        android:onClick="calc"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"/>
+        android:fontFamily="@font/lemon"
+        android:id="@+id/calculateci"
+        android:onClick="valci"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_margin="25dp"
+        android:background="#FF0FB1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="Compound Interest"
+            android:textColor="#FFFFFF"
+            android:background="#33251A1A"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:layout_margin="25dp"/>
 
-   <TextView
-       android:id="@+id/res"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_gravity="center"
-       android:layout_marginTop="60dp"
-       android:gravity="center"
-       android:textSize="25sp"
-       android:textStyle="bold"
-       android:textColor="@color/black"/>
-
+        <TextView
+            android:id="@+id/ciresult"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lemon"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_margin="25dp"
+            android:textColorHint="#99FFFFFF"
+            android:hint="Result"/>
+    </LinearLayout>
 </LinearLayout>
