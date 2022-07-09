@@ -14,13 +14,13 @@ public class quadcalc extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quadcalc);
-        a=findViewById(R.id.editText1);
-        b=findViewById(R.id.editText2);
-        c=findViewById(R.id.editText3);
-        t=findViewById(R.id.textView1);
+        a=findViewById(R.id.aq);
+        b=findViewById(R.id.bq);
+        c=findViewById(R.id.cq);
+        t=findViewById(R.id.qr);
 
     }
-    public void  button1(View v){
+    public void  calq(View v){
         float a1,b1,c1,r1,r2;
         a1=Float.parseFloat(a.getText().toString());
         b1=Float.parseFloat(b.getText().toString());
@@ -31,7 +31,7 @@ public class quadcalc extends AppCompatActivity {
         String re1,re2;
         re1 = String.format("%.2f",r1);
         re2 = String.format("%.2f",r2);
-        t.setText("The roots are: \n"+re1+","+re2);
+        t.setText(re1+", "+re2);
 
     }
 }
