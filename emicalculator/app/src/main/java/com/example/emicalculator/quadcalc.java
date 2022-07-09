@@ -1,4 +1,4 @@
-package com.example.quadratic;
+package com.example.emicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class quad extends AppCompatActivity {
+public class quadcalc extends AppCompatActivity {
     EditText a,b,c;
     TextView t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quadxml);
+        setContentView(R.layout.activity_quadcalc);
         a=findViewById(R.id.editText1);
         b=findViewById(R.id.editText2);
         c=findViewById(R.id.editText3);

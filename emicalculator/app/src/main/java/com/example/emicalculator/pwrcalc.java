@@ -1,4 +1,4 @@
-package com.example.powwroot;
+package com.example.emicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class powroot extends AppCompatActivity {
+public class pwrcalc extends AppCompatActivity {
     EditText a,b;
     TextView t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.powroot);
+        setContentView(R.layout.activity_pwrcalc);
         a=findViewById(R.id.a);
         b=findViewById(R.id.b);
         t=findViewById(R.id.textView1);
@@ -27,7 +27,7 @@ public class powroot extends AppCompatActivity {
         r= (float) Math.pow(a1,1/b1);
         String re;
         re = String.format("%.2f",r);
-        t.setText("The ans is: \n"+re);
+        t.setText(""+re);
 
     }
     public void b2(View v){
@@ -38,6 +38,6 @@ public class powroot extends AppCompatActivity {
         r2= (float) Math.pow(a2,b2);
         String re2;
         re2 = String.format("%.2f",r2);
-        t.setText("The ans is: \n"+re2);
+        t.setText(""+re2);
     }
 }
