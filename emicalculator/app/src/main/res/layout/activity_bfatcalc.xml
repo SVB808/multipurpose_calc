@@ -66,31 +66,21 @@
             android:textAllCaps="true"
             android:textSize="15dp"
             android:layout_margin="25dp"/>
-        <RadioGroup
-            android:layout_width="wrap_content"
+        <EditText
             android:id="@+id/genderr"
+            android:layout_width="130dp"
             android:layout_height="50dp"
-            android:orientation="horizontal">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="Male"
-                android:fontFamily="@font/lemon"
-                android:id="@+id/bfgm"
-                android:button="@drawable/custom_radio_button"
-                android:textColor="#FFFFFF"
-                android:padding="5dp"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="Female"
-                android:textColor="#FFFFFF"
-                android:fontFamily="@font/lemon"
-                android:theme="@style/RadioButtonStyle"
-                android:button="@drawable/custom_radio_button"
-                android:id="@+id/bfgf"
-                android:padding="5dp"/>
-        </RadioGroup>
+            android:fontFamily="@font/lemon"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_margin="25dp"
+            android:hint="F or M"
+            android:maxLength="1"
+            android:textAllCaps="true"
+            android:textColorHint="#80FFFFFF"
+            android:inputType="textCapCharacters" />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
