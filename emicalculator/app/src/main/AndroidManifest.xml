@@ -41,6 +41,12 @@
             android:name=".emicalc"
             android:exported="false"/>
         <activity
+            android:name=".quadcalc"
+            android:exported="false"/>
+        <activity
+            android:name=".pwrcalc"
+            android:exported="false"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="FindX">

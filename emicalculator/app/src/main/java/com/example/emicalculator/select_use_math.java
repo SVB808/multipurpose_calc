@@ -29,7 +29,7 @@ public class select_use_math extends AppCompatActivity {
     }
     public void qcalc (View v)
     {
-        Intent jquad = new Intent(select_use_math.this,quadcalc.class);
+        Intent jquad = new Intent(select_use_math.this, quadcalc.class);
         startActivity(jquad);
     }
 }

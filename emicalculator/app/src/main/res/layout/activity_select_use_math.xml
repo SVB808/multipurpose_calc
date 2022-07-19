@@ -8,9 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".select_use_math">
-<ScrollView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +20,7 @@
         android:textColor="@color/black"/>
     <Button
         android:layout_width="290dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_margin="50dp"
         android:fontFamily="@font/lemon"
         android:gravity="center"
@@ -32,10 +30,10 @@
         android:text="Simple Calculator"
         android:id="@+id/simpb"
         android:onClick="simpcalc"
-        android:textSize="20dp" />
+        android:textSize="19dp" />
     <Button
         android:layout_width="290dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:gravity="center"
         android:text="Power/Root Calculator"
         android:fontFamily="@font/lemon"
@@ -43,12 +41,12 @@
         android:textColor="#CFDAD3"
         android:layout_margin="50dp"
         android:padding="20dp"
-        android:textSize="20dp"
+        android:textSize="19dp"
         android:id="@+id/pb"
         android:onClick="pcalc"/>
     <Button
         android:layout_width="290dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:gravity="center"
         android:text="Roots of a Quadratic Equation"
         android:fontFamily="@font/lemon"
@@ -56,8 +54,7 @@
         android:textColor="#CFDAD3"
         android:layout_margin="50dp"
         android:padding="20dp"
-        android:textSize="20dp"
+        android:textSize="19dp"
         android:id="@+id/quadb"
         android:onClick="qcalc"/>
-</ScrollView>
 </LinearLayout>
