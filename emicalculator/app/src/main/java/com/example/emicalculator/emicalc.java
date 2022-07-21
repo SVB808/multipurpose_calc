@@ -73,8 +73,7 @@ public class emicalc extends AppCompatActivity {
                     double time=Double.parseDouble(tenure.getText().toString());
                     double rate=irate/1200;
                     float finaemi=(float)((principal*rate*(Math.pow(1+rate,time))/(Math.pow(1+rate,time)-1)));
-                    String f=String.format("%0.2f",finaemi);
-                    emiresult.setText(f);
+                    emiresult.setText("" + String.format("%.2f", finaemi));
                 }
             }
         });
