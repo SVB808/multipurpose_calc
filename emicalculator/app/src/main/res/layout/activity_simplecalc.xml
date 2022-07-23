@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/b3"
     android:orientation="vertical"
     tools:context=".simplecalc">
@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="135dp"
+        android:layout_height="wrap_content"
         android:background="#00D5F6F3"
         android:fontFamily="@font/amarante"
         android:text="Simple Calculator"
@@ -22,25 +22,25 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:hint="Enter the First number"
+        android:layout_height="wrap_content"
+        android:hint="First number"
         android:textColor="#CD0404"
         android:id="@+id/num1"
         android:gravity="center"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="30dp"
         android:fontFamily="@font/lemon"
         android:background="#33E53935"
         />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:hint="Enter the Second number"
+        android:layout_height="wrap_content"
+        android:hint="Second number"
         android:id="@+id/num2"
         android:fontFamily="@font/lemon"
         android:textColor="#CD0404"
         android:gravity="center"
-        android:textSize="25sp"
+        android:textSize="30dp"
         android:textAlignment="center"
         android:background="#33E53935"
 
@@ -48,16 +48,16 @@
     <TextView
         android:id="@+id/Result"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:background="#59E53935"
         android:fontFamily="@font/lemon"
         android:gravity="center"
         android:textColor="#CD0404"
-        android:textSize="100px"
+        android:textSize="30dp"
         android:hint="Result"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="175px"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
         android:background="#00FFFFFF">
         <Button
@@ -109,7 +109,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="175px"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
         android:background="#003DB1A6">
         <Button
@@ -159,7 +159,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="175px"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
         android:background="#003DB1A6">
         <Button
@@ -209,7 +209,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="175px"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
         android:background="#003DB1A6">
         <Button
@@ -259,7 +259,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="175px"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
         android:background="#003DB1A6">
         <Button

@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:fontFamily="@font/lemon"
-            android:text="ax² + bx + c (a != b)"
+            android:text="ax² + bx + c (a != 0)"
             android:textColor="#FFFFFF"
             android:background="#4DFFFFFF"
             android:gravity="center"

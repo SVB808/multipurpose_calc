@@ -83,7 +83,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_margin="20dp"
-
+                        android:onClick="movepageh"
                         android:src="@drawable/fitness"
                         tools:ignore="SpeakableTextPresentCheck" />
                     <TextView
@@ -122,7 +122,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_margin="20dp"
-
+                        android:onClick="movepagef"
                         android:src="@drawable/finance"
                         tools:ignore="SpeakableTextPresentCheck" />
                     <TextView
@@ -161,7 +161,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_margin="20dp"
-
+                        android:onClick="movepagem"
                         android:src="@drawable/mathsicn"
                         tools:ignore="SpeakableTextPresentCheck" />
                     <TextView
