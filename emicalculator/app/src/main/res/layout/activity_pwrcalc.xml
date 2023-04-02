@@ -140,6 +140,7 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:layout_gravity="center"
+        android:fontFamily="@font/lemon"
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="#E14B13"/>

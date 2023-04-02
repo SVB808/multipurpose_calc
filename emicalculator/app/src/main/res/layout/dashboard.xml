@@ -8,7 +8,6 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -68,7 +67,7 @@
                 android:onClick="movepageh"
                 android:layout_marginTop="45dp"
                 app:cardCornerRadius="100dp"
-                app:cardBackgroundColor="#FCC8C8">
+                app:cardBackgroundColor="#FFFFFF">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -105,7 +104,7 @@
                 android:layout_rowWeight="1"
                 android:onClick="movepagef"
                 app:cardElevation="6dp"
-                app:cardBackgroundColor="#FFC9E7CA"
+                app:cardBackgroundColor="#FFFFFF"
                 android:layout_margin="20dp"
                 app:cardCornerRadius="100dp">
 
@@ -143,7 +142,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
-                app:cardBackgroundColor="#DCDFF7"
+                app:cardBackgroundColor="#FFFFFF"
                 android:onClick="movepagem"
                 android:layout_margin="20dp"
                 app:cardCornerRadius="100dp">
